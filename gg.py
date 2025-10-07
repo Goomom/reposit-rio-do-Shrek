@@ -24,3 +24,19 @@
 # tamanho = int(input("Digite o tamanho da senha desejada: "))
 # senha = gerar_senha(tamanho)
 # print("Senha gerada:", senha)
+
+soma = 0
+numeros = []
+
+while True:
+    numero = int(input("Digite um número (0 para sair): "))
+    if numero == 0:
+        break
+    soma += numero
+    numeros.append(numero)
+
+if numeros:
+    expressao = " + ".join(str(n) for n in numeros)
+    print(f"{expressao} = {soma}")
+else:
+    print("Nenhum número foi informado.")
